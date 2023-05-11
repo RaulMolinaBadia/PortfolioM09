@@ -1,0 +1,28 @@
+.seccion{
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+input:invalid{
+    border: 1px solid red;
+    color: red;
+}
+
+.errores{
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+.ok{
+    background-color: green;
+}
+.Error{
+    background-color: red;
+}

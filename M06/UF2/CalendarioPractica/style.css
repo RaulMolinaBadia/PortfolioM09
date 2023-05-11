@@ -1,0 +1,13 @@
+.day{
+    border: 1px solid black;
+    width: 50px;
+    text-align: center;
+}
+.calendar{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    place-items: center;
+    width: fit-content;
+    background-color: blue;
+    cursor: none;
+}

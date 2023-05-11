@@ -1,0 +1,42 @@
+header h1 {
+  width: 100%;
+  background-color: yellow;
+  text-align: center;
+}
+#menu {
+  float: left;
+  width: 20%;
+  height: 500px;
+  border-right: 1px solid green;
+}
+#menu ul {
+  list-style: none;
+  padding-left: 0px;
+}
+#center {
+  margin-left: 10px;
+  width: 59%;
+  float: left;
+  height: 500px;
+}
+#lastPost {
+  text-align: right;
+  border: dotted green 1px;
+  padding: 5px;
+}
+#lastPost ul {
+  list-style: none;
+  padding-left: 0px;
+  color: blue;
+  text-decoration: underline;
+  text-align: right;
+}
+#right {
+  width: 20%;
+  float: left;
+  height: 500px;
+}
+footer p {
+  width: 100%;
+  text-align: center;
+}

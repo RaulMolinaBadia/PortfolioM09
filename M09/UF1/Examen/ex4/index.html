@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav ul li {
+        display: inline-block;
+        padding-right: 12px;
+      }
+      .opinion {
+        border-top: 3px solid black;
+      }
+      section {
+        display: flex;
+      }
+      .opinion section article {
+        border-right: 1px solid grey;
+        margin: 10px;
+      }
+      img {
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+      }
+      .salud {
+        border-top: 3px solid black;
+        padding-bottom: 30px;
+      }
+      ol {
+        margin-left: 0px;
+        padding-left: 0px;
+        column-count: 2;
+      }
+      ol li {
+        list-style: none;
+        counter-increment: list;
+      }
+      ol li::before {
+        color: black;
+        content: counter(list) ".";
+        font-weight: bolder;
+      }
+      .visto {
+        border-top: 3px solid black;
+      }
+      .lineas {
+        display: inline-block;
+      }
+      .foto-footer {
+        width: 50px;
+        height: 50px;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <img
+        src="https://educaciodigital.cat/iesbadia/moodle/pluginfile.php/13101/question/questiontext/71334/5/138066/el-pais.svg"
+        alt=""
+      />
+    </header>
+    <nav>
+      <ul>
+        <li>Internacional</li>
+        <li>Opinión</li>
+        <li>España</li>
+        <li>España</li>
+        <li>Sociedad</li>
+        <li>Educación</li>
+        <li>Medio Ambiente</li>
+        <li>Ciencia</li>
+        <li>Salud</li>
+        <li>Tecnología</li>
+        <li>Cultura</li>
+        <li>Babelia</li>
+        <li>Deportes</li>
+        <li>Televisión</li>
+        <li>Gente</li>
+        <li>El País Semanal</li>
+      </ul>
+    </nav>
+    <div class="opinion">
+      <h1>Opinion</h1>
+      <section>
+        <article>
+          <h1>EDITORIAL</h1>
+          <h2>Mantener el fuego a raya</h2>
+          <p>
+            Los bomberos de Castilla y León aciertan en reclamar que no se
+            escatimen medios para prevenir los incendios forestales
+          </p>
+        </article>
+        <article>
+          <h2>Sobre el indulto a Griñán</h2>
+          <p>
+            “El Gobierno tendrá que adoptar una decisión en un contexto marcado
+            por una profunda división de opiniones que, en buena medida,
+            demuestran una desenfocada comprensión jurídica de este mecanismo”
+          </p>
+          <h3>Ana Carmona Contreras</h3>
+        </article>
+        <article>
+          <h2>
+            ¿Es serio comparar al actual Gobierno de España con el de Italia?
+          </h2>
+          <p>
+            “Si Fernando Savater cree que España ha entrado con este Gobierno en
+            una deriva autoritaria similar a la de varios países gobernados por
+            la extrema derecha, lo debería justificar”
+          </p>
+          <h3>Javier Padilla</h3>
+        </article>
+        <article>
+          <h2>Relatos europeos que nos vamos contando</h2>
+          <p>
+            “La UE está tomando posiciones partidistas en la política italiana,
+            igual que hizo durante las guerras del Brexit”
+          </p>
+          <h3>Wolfgang Münchau</h3>
+        </article>
+        <article>
+          <h2>Cuando abucheas a tu propia heroína ‘indepe’</h2>
+          <p>
+            “El día en que el liberalismo de las luces vuelva a imperar en
+            Cataluña habremos pasado página”
+          </p>
+          <h3>Xavier Vidal-Folch</h3>
+        </article>
+        <article>
+          <h2>¿Se acabó la globalización?</h2>
+          <p>
+            “A pesar de sus costos, problemas y accidentes la integración entre
+            países no ha muerto”
+          </p>
+          <h3>Moisés Naím</h3>
+        </article>
+      </section>
+    </div>
+    <div class="salud">
+      <h1>Salud</h1>
+      <section>
+        <img
+          src="https://educaciodigital.cat/iesbadia/moodle/pluginfile.php/13101/question/questiontext/71334/5/138066/HK3VR3ZJZ5H43OQVT2AHELSQXQ_002.jpg"
+          alt=""
+        />
+        <article>
+          <!-- Este fragmento no aparece en la foto -->
+          <!-- <h1>
+            Entierro de una persona fallecida por covid en el cementerio de La
+            Almudena de Madrid.
+          </h1> -->
+          <h1>
+            La mortalidad en España vuelve a cifras normales tras un verano
+            extremo
+          </h1>
+          <h3>Pablo Linde|Madrid</h3>
+          <p>
+            La caída de los decesos en septiembre, unida a la bajada de
+            temperaturas, señala al calor como el máximo responsable del récord
+            de muertes registrado entre junio y agosto
+          </p>
+        </article>
+        <img
+          src="https://educaciodigital.cat/iesbadia/moodle/pluginfile.php/13101/question/questiontext/71334/5/138066/CL5ASVSVTTC6J2XBZXPSSYIQMY_002.jpg"
+          alt="foto2"
+        />
+        <article>
+          <h1>
+            Cuidado con las conservas caseras: es importante hacerlas bien
+          </h1>
+          <h3>Miguel A. Lurueña</h3>
+          <p>
+            Este producto mal elaborado puede provocar botulismo, una enfermedad
+            poco frecuente pero potencialmente muy grave Lo más visto
+          </p>
+        </article>
+      </section>
+    </div>
+    <div class="visto">
+      <h1>Lo mas visto</h1>
+      <section>
+        <ol>
+          <li>
+            El protocolo de prevención de daños que Isabel Preysler ha enseñado
+            a Tamara Falcó: 50 años evitando que el escándalo la “manche o
+            salpique”
+          </li>
+          <li>
+            EE UU intercambia a los sobrinos de Cilia Flores condenados por
+            narcotráfico por siete estadounidenses detenidos en Venezuela
+          </li>
+          <li>Muere Iñaki Larramendi, uno de los cinco fundadores de ETA</li>
+          <li>
+            Rigoberta Bandini: “No, no soy del Opus. ¡Me saco las tetas en todos
+            los conciertos!”
+          </li>
+          <li>
+            Arbi decidió su final: el adiós voluntario de un enfermo de ELA
+          </li>
+          <li>
+            Santiago Lorenzo: “Muchos se mudan al campo y a los seis meses no
+            saben dónde meterse”
+          </li>
+          <li>
+            De Perú a la piscina de su comunidad: la estafa que contrata en
+            España socorristas que ni saben nadar
+          </li>
+          <li>
+            Máximo Pradera: “Con el cáncer he aprendido tarde a comer, pero al
+            menos no me he muerto”
+          </li>
+          <li>
+            Así funciona un colegio que ya autogestiona parte de su horario:
+            “Muchos niños están deseando acabar las vacaciones para volver”
+          </li>
+          <li>
+            Resultados de las elecciones en Brasil, en vivo | El duelo entre
+            Lula y Bolsonaro deja un país polarizado pendiente del desempate más
+            reñido
+          </li>
+        </ol>
+      </section>
+    </div>
+    <hr />
+    <footer>
+      ©
+      <b>Ediciones EL PAÍS</b>
+      <br />
+      <div class="lineas">
+        Contacto Venta de contenidos Aviso legal Política cookies Configuración
+        de cookies Política de privacidad Mapa Suscripciones EL PAÍS
+        Suscripciones para empresas
+      </div>
+      <br />
+      <img
+        class="foto-footer"
+        src="https://educaciodigital.cat/iesbadia/moodle/pluginfile.php/13101/question/questiontext/71334/5/138066/prisa.png"
+        alt="foto 3"
+      />
+      <div class="lineas"></div>
+      RSS Índice de temas Noticias de hoy
+    </footer>
+  </body>
+</html>

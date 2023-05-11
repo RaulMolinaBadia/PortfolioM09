@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Ejercicio 15 - Informaci�n sobre eventos</title>
+
+        <style type="text/css">
+            * {
+                padding: 0;
+                margin: 0;
+                border: 0;
+            }
+            body {
+                font-family: arial, helvetica;
+                width: 100vw;
+                height: 100vh;
+            }
+            #info {
+                width: 500px;
+                border: thin solid silver;
+                padding: 0.5em;
+                position: fixed;
+            }
+
+            #info p {
+                font-size: x-large;
+                line-height: 100px;
+            }
+        </style>
+
+        <script type="text/javascript">
+            window.onload = () => {
+                let info = document.querySelector("body");
+                info.addEventListener("mousemove", (e) => {
+                    recogerInfo(e);
+                });
+                info.addEventListener("keydown", (e) => {
+                    recogerInfo(e);
+                });
+            };
+            function recogerInfo(e) {
+                let mensaje = [];   
+                console.log(e.type);
+                if (e.type == "mousemove") {
+                    let info1 = document.getElementById("info1");
+                    // info1.innerHTML = `El evento lanzado es: ${e.type}`;
+                    mensaje.push(`El evento lanzado es: ${e.type}`);
+
+                    let info2 = document.getElementById("info2");
+                    // info2.innerHTML = `Posicion Puntero pagina: X=${e.pageX} Y=${e.pageY}`;
+                    mensaje.push(
+                        `Posicion Puntero pagina: X=${e.pageX} Y=${e.pageY}`
+                    );
+                    let info3 = document.getElementById("info3");
+                    // info3.innerHTML = `Posicion Puntero navegador: X=${e.clientX} Y=${e.clientY}`;
+                    mensaje.push(
+                        `Posicion Puntero navegador: X=${e.clientX} Y=${e.clientY}`
+                    );
+                    let info4 = document.getElementById("info4");
+                    // info4.innerHTML = `Posicion Puntero navegador: X=${e.screenX} Y=${e.screenY}`;
+                    document.getElementById("info").style.backgroundColor =
+                        "yellow";
+                    mensaje.push(
+                        `Posicion Puntero navegador: X=${e.screenX} Y=${e.screenY}`
+                    );
+                } else if (e.type == "keydown") {
+                    let info1 = document.getElementById("info1");
+                    // info1.innerHTML = `El evento lanzado es: ${e.type}`;
+                    mensaje.push(`El evento lanzado es: ${e.type}`);
+
+                    let info2 = document.getElementById("info2");
+                    // info2.innerHTML = `La tecla pulsada es: ${e.key}`;
+                    mensaje.push(`La tecla pulsada es: ${e.key}`);
+
+                    let info3 = document.getElementById("info3");
+                    // info3.innerHTML = `El codigo de la tecla pulsada es: ${e.keyCode}`;
+                    mensaje.push(
+                        `El codigo de la tecla pulsada es: ${e.keyCode}`
+                    );
+
+                    let info4 = document.getElementById("info4");
+                    // info4.innerHTML = `Se a pulsado el control: ${e.ctrlKey}`;
+                    mensaje.push(`Se a pulsado el control: ${e.ctrlKey}`);
+                    document.getElementById("info").style.backgroundColor =
+                        "blue";
+                }
+                muestraInformacion(mensaje);
+            }
+
+            function muestraInformacion(mensaje) {
+                document.getElementById("info").innerHTML =
+                    "<h1>" + mensaje[0] + "</h1>";
+                for (var i = 1; i < mensaje.length; i++) {
+                    document.getElementById("info").innerHTML +=
+                        "<p>" + mensaje[i] + "</p>";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="info">
+            <h1>Information Mouse Move</h1>
+            <p id="info1"></p>
+            <p id="info2"></p>
+            <p id="info3"></p>
+            <p id="info4"></p>
+        </div>
+    </body>
+</html>

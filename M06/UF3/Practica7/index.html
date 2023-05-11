@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 7</title>
+     <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/code.js"></script>
+</head>
+
+<body>
+    <div class="container col-7 p-5 d-flex align-content-center justify-content-center flex-column align-items-center">
+    <form name="MiForm" id="Form">
+        <div class="seccion p-5">
+            <h3 style="width: 100%; text-align: center;">Datos Personales</h3> <br> <br>
+            <div class="w-100 m-1">
+                <label for="dni">DNI</label> 
+                <input type="number" name="dniNumeros" id="dniNumeros">-
+                <input type="text" name="dniLetra" id="dniLetra" style="width: 25px;"> 
+                <br> <br>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre"> <br> <br>
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos"> <br> <br>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="w-100 m-1">
+                <label for="sexo">Sexo</label>
+                <input type="radio" name="sexo" value="Hombre"> Hombre
+                <input type="radio" name="sexo" value="Mujer"> Mujer
+            </div>
+        </div>
+
+
+        <div class="seccion p-5">
+            <h3 style="width: 100%; text-align: center;">Dirección</h3> <br> <br>
+            <div>
+                <label for="calle">Calle/Avda</label>
+                <input type="text" name="calle" id="avenida"> <br> <br>
+
+                <label for="poblacion">Poblacion</label>
+                <input type="text" name="poblacion" id="poblacion"> <br> <br>
+
+                <label for="provincia">Provincia</label>
+                <select name="provincia" disabled id="provincias">
+                    <option value="">Elige Provincia</option>
+                    <option value="Álava/Araba">Álava/Araba</option>
+                    <option value="Albacete">Albacete</option>
+                    <option value="Alicante">Alicante</option>
+                    <option value="Almería">Almería</option>
+                    <option value="Asturias">Asturias</option>
+                    <option value="Ávila">Ávila</option>
+                    <option value="Badajoz">Badajoz</option>
+                    <option value="Baleares">Baleares</option>
+                    <option selected value="Barcelona">Barcelona</option>
+                    <option value="Burgos">Burgos</option>
+                    <option value="Cáceres">Cáceres</option>
+                    <option value="Cádiz">Cádiz</option>
+                    <option value="Cantabria">Cantabria</option>
+                    <option value="Castellón">Castellón</option>
+                    <option value="Ceuta">Ceuta</option>
+                    <option value="Ciudad Real">Ciudad Real</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Cuenca">Cuenca</option>
+                    <option value="Gerona/Girona">Gerona/Girona</option>
+                    <option value="Granada">Granada</option>
+                    <option value="Guadalajara">Guadalajara</option>
+                    <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
+                    <option value="Huelva">Huelva</option>
+                    <option value="Huesca">Huesca</option>
+                    <option value="Jaén">Jaén</option>
+                    <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Las Palmas">Las Palmas</option>
+                    <option value="León">León</option>
+                    <option value="Lérida/Lleida">Lérida/Lleida</option>
+                    <option value="Lugo">Lugo</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Málaga">Málaga</option>
+                    <option value="Melilla">Melilla</option>
+                    <option value="Murcia">Murcia</option>
+                    <option value="Navarra">Navarra</option>
+                    <option value="Orense/Ourense">Orense/Ourense</option>
+                    <option value="Palencia">Palencia</option>
+                    <option value="Pontevedra">Pontevedra</option>
+                    <option value="Salamanca">Salamanca</option>
+                    <option value="Segovia">Segovia</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Soria">Soria</option>
+                    <option value="Tarragona">Tarragona</option>
+                    <option value="Tenerife">Tenerife</option>
+                    <option value="Teruel">Teruel</option>
+                    <option value="Toledo">Toledo</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Valladolid">Valladolid</option>
+                    <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
+                    <option value="Zamora">Zamora</option>
+                    <option value="Zaragoza">Zaragoza</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="seccion p-5">
+            <h3 style="width: 100%; text-align: center;">Practica en Grupo</h3> <br> <br>
+
+            <div class=" m-1">
+                 <label for="archivo">Archivo</label>
+                <input type="file" name="archivo" id="archivo" > <br> <br>
+            </div>
+
+            <div class="m-1">
+                <input type="checkbox" name="encriptado" disabled id="encriptado"> Archivo encriptado 
+                <input type="checkbox" name="comprimido" disabled id="comprimido"> Archivo comprimido <br> <br>
+            </div>
+
+            <div class="m-1 w-100">
+                <label for="comentarios">Descripcion de la practica</label> <br>
+            </div>
+            <div class="m-1">
+                <textarea id="descripcion" required disabled onkeypress="return limita(30);"></textarea>
+            </div>
+        </div>
+
+        
+    </form>
+    <a href="#" class="btn btn-primary w-25 m-3" id="enviar">Enviar</a>
+</div>
+
+<div class="errores" id="info"></div>
+</body>
+
+</html>

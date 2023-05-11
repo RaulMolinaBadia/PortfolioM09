@@ -1,0 +1,30 @@
+.dialogWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.dialogWrapper.dialogShow {
+    display: flex;
+}
+
+.dialogWrapper>* {
+    max-width: 50vw;
+    max-height: 50vh;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid black;
+    overflow: scroll;
+}
+
+.hideScroll {
+    overflow: hidden;
+    height: 100%;
+}
+

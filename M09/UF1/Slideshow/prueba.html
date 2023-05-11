@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      :root {
+        --black: #000;
+      }
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+      }
+      .navigationBar {
+        background: #529471;
+        flex: 1;
+        height: 10vh;
+      }
+      .content {
+        display: flex;
+        flex-direction: row;
+      }
+      ul a {
+        display: inline-block;
+        margin-right: 10px;
+        list-style: none;
+        text-decoration: none;
+        color: var(--black);
+      }
+      article {
+        flex: 6;
+        min-height: 70vh;
+      }
+      aside {
+        background: #a3cd9e;
+        flex: 1;
+      }
+      header,
+      footer {
+        background: #35635b;
+        height: 10vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Title</h1></header>
+    <nav class="navigationBar">
+      <ul>
+        <a href=""><li>Home</li></a>
+        <a href=""><li>Author</li></a>
+        <a href=""><li>Multimedia</li></a>
+        <a href=""><li>Contact</li></a>
+      </ul>
+    </nav>
+    <main class="content">
+      <article>Article</article>
+      <aside>Aside</aside>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

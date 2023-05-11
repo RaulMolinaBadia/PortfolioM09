@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        padding-top: 30%;
+        padding-left: 30%;
+        display: flex;
+        background-color: #c7c7c7;
+        z-index: -3;
+      }
+
+      .cuadrados:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        /* background-color: #ff0000; */
+        /* background-color: #c7c7c7; */
+        background-color: #0000ff;
+        transition: all 5s;
+        z-index: 3;
+        margin-right: 200px;
+        transform-origin: top left;
+      }
+      .cuadrados:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        /* background-color: #ff0000; */
+        /* background-color: #c7c7c7; */
+        background-color: #0000ff;
+        transition: all 5s;
+        z-index: 3;
+        margin-right: 200px;
+        transform-origin: top center;
+      }
+      .cuadrados:nth-child(3) {
+        width: 100px;
+        height: 100px;
+        /* background-color: #ff0000; */
+        /* background-color: #c7c7c7; */
+        background-color: #0000ff;
+        transition: all 5s;
+        z-index: 3;
+        margin-right: 200px;
+        transform-origin: top right;
+      }
+      .recuadro1 {
+        position: absolute;
+        border: solid 2px #ff0000;
+        width: 96px;
+        height: 96px;
+        z-index: 2;
+        margin-left: 300px;
+      }
+      .recuadro2 {
+        position: absolute;
+        border: solid 2px #ff0000;
+        width: 96px;
+        height: 96px;
+        z-index: 2;
+        margin-left: 600px;
+      }
+      .recuadro3 {
+        position: absolute;
+        border: solid 2px #ff0000;
+        width: 96px;
+        height: 96px;
+        z-index: 2;
+        margin-right: 200px;
+      }
+      .container:hover .cuadrados {
+        transform: rotateZ(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cuadrados"></div>
+      <div class="cuadrados"></div>
+      <div class="cuadrados"></div>
+      <div class="recuadro1"></div>
+      <div class="recuadro2"></div>
+      <div class="recuadro3"></div>
+    </div>
+  </body>
+</html>

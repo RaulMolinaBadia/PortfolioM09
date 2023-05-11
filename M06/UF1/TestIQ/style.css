@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  margin: 10px;
+  background-color: #bef2ff;
+  display: flex;
+}
+.containerQuestions {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+}
+.containerQuestions a {
+  cursor: pointer;
+  margin: 5px;
+  border: 0.5px solid black;
+  background-color: #93a7d1;
+  color: black;
+  text-decoration: none;
+}
+
+.questionAnswer {
+  display: none;
+  margin: auto;
+}
+
+div:target {
+  display: initial;
+  margin: auto;
+}
+.questionAnswer {
+  border: 1px solid black;
+  background-color: burlywood;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px;
+}
+
+ul li {
+  text-align: center;
+  list-style: none;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: lightgreen;
+  font-size: x-large;
+}
+button {
+  width: 531px;
+  height: 22px;
+  margin: 0;
+}
+
+.verde {
+  color: red;
+}
+
+.amarillo {
+  color: green;
+}
+
+.rojo {
+  color: blue;
+}
+
+.violeta {
+  color: yellow;
+}
+
+.azul {
+  color: blueviolet;
+}

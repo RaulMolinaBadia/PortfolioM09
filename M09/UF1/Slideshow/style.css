@@ -1,0 +1,91 @@
+body {
+  background-color: skyblue;
+}
+header {
+  background-color: blue;
+  text-align: center;
+  color: white;
+}
+.container {
+  width: 1200px;
+  height: 700px;
+  border: 1px solid grey;
+  background-color: rgb(48, 28, 28);
+  padding-left: 33px;
+  padding-top: 33px;
+}
+.containerPhotos {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  background-color: grey;
+  width: 432px;
+  height: 288px;
+}
+.containerNombre {
+  display: flex;
+  background-color: grey;
+  width: 432px;
+  height: 288px;
+}
+figcaption {
+  display: none;
+}
+img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+a {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  display: inline-block;
+}
+
+img:hover {
+  transform: scale(1.2);
+  transition: all 2s;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+  position: absolute;
+}
+
+a:focus .v {
+  width: 300px;
+  height: 430px;
+  transform: translateX(450px);
+  position: absolute;
+  z-index: 21;
+  -webkit-transform: translateX(450px);
+  -moz-transform: translateX(450px);
+  -ms-transform: translateX(450px);
+  -o-transform: translateX(450px);
+}
+
+a:focus .h {
+  width: 400px;
+  height: 300px;
+  transform: translateX(450px);
+  position: absolute;
+  z-index: 20;
+  -webkit-transform: translateX(450px);
+  -moz-transform: translateX(450px);
+  -ms-transform: translateX(450px);
+  -o-transform: translateX(450px);
+}
+
+a:focus figcaption {
+  display: block;
+  position: fixed;
+  top: 50%;
+  color: white;
+  z-index: 80;
+  left: 5%;
+}

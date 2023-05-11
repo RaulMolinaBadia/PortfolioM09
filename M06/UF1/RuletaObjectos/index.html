@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="a">
+      <div id="SelectorApuesta">
+        <!-- Sencilla -->
+        <div class="Apuestas">
+          <label>Sencilla</label>
+          <select class="Apuesta" name="Sencilla" id="Sencilla"></select>
+          <br />
+          <label>Cantidad Apostada</label>
+          <input id="dineroSencilla" type="text" />
+          <br />
+          <button value="Sencilla">Enviar</button>
+        </div>
+
+        <!-- FaltaPassa -->
+        <div class="Apuestas">
+          <label>Falta/Passa</label>
+          <select class="Apuesta" name="FaltaPassa" id="FaltaPassa">
+            <option value="Falta">Falta</option>
+            <option value="Passa">Passa</option>
+          </select>
+          <br />
+          <label>Cantidad Apostada</label>
+          <input id="dineroFaltaPassa" type="text" />
+          <br />
+          <button value="FaltaPassa">Enviar</button>
+        </div>
+
+        <!-- Parell/Senar -->
+        <div class="Apuestas">
+          <label>Parell/Senar</label>
+          <select class="Apuesta" name="ParellSenar" id="ParellSenar">
+            <option value="Parell">Parell</option>
+            <option value="Senar">Senar</option>
+          </select>
+          <br />
+          <label>Cantidad Apostada</label>
+          <input id="dineroParellSenar" type="text" />
+          <br />
+          <button value="ParellSenar">Enviar</button>
+        </div>
+
+        <!-- Vermell/Negre -->
+        <div class="Apuestas">
+          <label>Vermell/Negre</label>
+          <select class="Apuesta" name="VermellNegre" id="VermellNegre">
+            <option value="Vermell">Vermell</option>
+            <option value="Negre">Negre</option>
+          </select>
+          <br />
+          <label>Cantidad Apostada</label>
+          <input id="dineroVermellNegre" type="text" />
+          <br />
+          <button value="VermellNegre">Enviar</button>
+        </div>
+
+        <!-- Dotzena -->
+        <div class="Apuestas">
+          <label>Dotzena</label>
+          <select class="Apuesta" name="Dotzena" id="Dotzena">
+            <option value="1-12">1-12</option>
+            <option value="13-24">13-24</option>
+            <option value="25-36">25-36</option>
+          </select>
+          <br />
+          <label>Cantidad Apostada</label>
+          <input id="dineroDotzena" type="text" />
+          <br />
+          <button value="Dotzena">Enviar</button>
+        </div>
+
+        <!-- Columna -->
+        <div class="Apuestas">
+          <label>Columna</label>
+          <select class="Apuesta" name="Columna" id="Columna">
+            <option value="1-34">1-34</option>
+            <option value="2-35">2-35</option>
+            <option value="3-36">3-36</option>
+          </select>
+          <br />
+          <label>Cantidad Apostada</label>
+          <input id="dineroColumna" type="text" />
+          <br />
+          <button value="Columna">Enviar</button>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <td>Nº Apuesta</td>
+            <td>Resultado Apuesta</td>
+            <td>Tipo Apuesta</td>
+            <td>Cantidad Apostada</td>
+            <td>Selecion Usuario</td>
+            <td>Numero Ganador</td>
+            <td>Profit</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div id="tapete">
+      <img src="img/ruleta.png" alt="numeroRuleta" />
+      <img src="img/tapeteRuleta.png" alt="tapeteRuleta" />
+    </div>
+  </body>
+  <script type="module" src="main.js"></script>
+</html>

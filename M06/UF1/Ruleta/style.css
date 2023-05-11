@@ -1,0 +1,34 @@
+body {
+  background-color: green;
+  display: flex;
+}
+#a {
+  display: flex;
+  flex-direction: column;
+}
+#SelectorApuesta {
+  display: flex;
+  padding: 10px;
+}
+#tapete {
+  flex: 2;
+}
+#tapete img:nth-child(1) {
+  width: 200px;
+}
+#tapete img:nth-child(2) {
+  width: 200px;
+  height: 400px;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+tr {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}

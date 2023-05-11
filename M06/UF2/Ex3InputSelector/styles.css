@@ -1,0 +1,19 @@
+.rojo{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
+.fondogris{
+    background-color: gray;
+}
+
+.azul{
+    color: blue;
+}
+
+.selecionado{
+    border: 1px solid black;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Ex1</h2>
+    <p>
+      1.- Descarrega un fitxer de vídeo i inserta una etiqueta vídeo amb accés
+      al fitxer.
+    </p>
+    <video controls width="300px" height="200px">
+      <source src="./videos/cascada-158229.mp4" type="video/mp4" />
+    </video>
+    <hr />
+    <h2>Ex2</h2>
+    <p>2.- Inserta un nou vídeo amb una imatge com a pòster.</p>
+    <video controls width="300px" height="300px" poster="./img/ex2.png"></video>
+    <hr />
+    <h2>Ex3</h2>
+    <p>3.- Inserta diferents vídeos alternatius del següent vídeo.</p>
+    <video controls width="300px" height="200px">
+      <source
+        src="https://commons.wikimedia.org/wiki/File:Big_Buck_Bunny_first_23_seconds_1080p.ogv"
+        type="video/mp4"
+      />
+      <source src="./videos/cascada-158229.ogv" type="video/ogg" />
+      <source src="./videos/cascada-158229.mp4" type="video/mp4" />
+    </video>
+    <hr />
+    <h2>Ex4</h2>
+    <p>
+      4.- Fes una etiqueta a sota del vídeo anterior que mostri les vegades que
+      s'ha pausat el vídeo.
+    </p>
+    <video id="videoEx4" controls width="300px" height="200px">
+      <source src="./videos/cascada-158229.mp4" type="" />
+    </video>
+    <p id="contadorPause"></p>
+    <hr />
+    <h2>Ex5</h2>
+    <p>
+      5.- Desactiva els controls de l'etiqueta VIDEO i crea amb botons els teus
+      propis controls.
+    </p>
+    <video id="videoEx5" width="300px" height="200px">
+      <source src="./videos/cascada-158229.mp4" type="" />
+    </video>
+    <button id="pauseEx5">pause</button>
+    <button id="playEx5">play</button>
+    <hr />
+  </body>
+</html>

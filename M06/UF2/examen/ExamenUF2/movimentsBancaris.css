@@ -1,0 +1,30 @@
+td {
+  border: 1px solid black;
+}
+table {
+  border: 1px solid black;
+  width: fit-content;
+  background-color: rgb(113, 174, 228);
+}
+
+.tableBanc {
+  display: flex;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+.concepte {
+  display: flex;
+  flex-direction: column;
+}
+
+.tipusImport {
+  display: flex;
+  flex-direction: column;
+}
+.saldo {
+  display: flex;
+  flex-direction: column;
+}

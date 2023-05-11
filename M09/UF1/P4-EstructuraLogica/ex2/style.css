@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+header {
+  width: 100vh;
+  height: 10vh;
+  display: flex;
+}
+header h1 {
+  align-content: center;
+  font-size: 5vh 5vw;
+}
+header img {
+  align-content: center;
+}
+#menu {
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+}
+#menu li {
+  display: inline-block;
+}
+article {
+  display: flex;
+  width: 100vw;
+}
+article #derecha {
+  text-align: center;
+  width: 50vw;
+  height: 70vh;
+}
+article #izquierda {
+  text-align: center;
+  width: 50vw;
+  height: 70vh;
+}
+footer {
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+}

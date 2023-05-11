@@ -1,0 +1,22 @@
+#container {
+  display: flex;
+}
+#main {
+  width: 70vw;
+  height: 100vh;
+}
+#nav {
+  width: 30vw;
+  height: 100vh;
+}
+#nav ul {
+  list-style: none;
+  text-decoration: none;
+}
+#nav ul a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  margin-top: 15vh;
+}

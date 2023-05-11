@@ -1,0 +1,60 @@
+ol {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+ol li {
+  list-style: none;
+  color: hsl(35deg 100% 54%);
+  counter-increment: list;
+}
+ol li::before {
+  color: black;
+  content: counter(list) ".-";
+}
+
+h1 {
+  font-weight: 500;
+  color: #113b60;
+}
+.borders {
+  color: hsl(35deg 80% 52%);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid hsl(35deg 80% 52%);
+  border-bottom: 1px solid hsl(35deg 80% 52%);
+}
+h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: hsl(35deg 80% 52%);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+#principal {
+  width: 100%;
+}
+#izquierda {
+  width: 95%;
+  float: left;
+}
+#derecha {
+  width: 5%;
+  margin-top: 0px;
+  text-align: center;
+  float: right;
+}
+#rectangulo {
+  width: 30px;
+  height: 20px;
+  border-radius: 5px;
+  background: hsl(208deg 70% 22%);
+  text-align: center;
+  color: white;
+}
+#triangulo {
+  width: 0;
+  height: 0;
+  border-top: 16px solid hsl(208deg 70% 22%);
+  border-right: 16px solid transparent;
+  margin-left: 9px;
+}

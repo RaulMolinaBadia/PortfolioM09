@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mi Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .bg-light {
+        background-color: beige !important;
+      }
+      .text-light {
+        color: beige !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-collapse navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-white"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modules">Modulos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="bg-dark p-4" id="inicio"></div>
+    <div class="container-fluid text-light text-center bg-dark p-0 min-vh-100">
+      <h1 class="display-4">Bienvenidos a mi Portfolio</h1>
+      <p class="lead">
+        Soy un desarrollador web con experiencia en tecnologías como HTML, CSS,
+        JavaScript, JQuery, Node, Express y Bootstrap.
+      </p>
+      <img
+        class="w-auto h-auto"
+        src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairTheCaesar&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Twinkle&skinColor=Light"
+      />
+    </div>
+
+    <div class="bg-light p-4" id="aboutMe"></div>
+    <div id="aboutMe" class="container-fluid min-vh-100 text-dark bg-light p-0">
+      <h2 class="text-center pb-3">Acerca de mí</h2>
+      <div class="container-fluid p-0 w-100 row">
+        <div class="col-lg-6 p-4">
+          <p class="lead">Hola, me llamo Raul Molina Aguilar.</p>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio,
+            vel! Iure, ad magnam! Dicta asperiores voluptatum recusandae illum
+            ipsa natus qui amet, dignissimos, explicabo iusto harum, magnam iure
+            error porro. Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Cumque ipsa magnam, dolore pariatur repellendus sed provident
+            eius illum voluptates quisquam possimus excepturi itaque, neque
+            harum minus dolores, aspernatur aperiam accusamus.
+          </p>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <img
+            class="h-auto w-auto py-5"
+            src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairTheCaesar&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Twinkle&skinColor=Light"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark p-4" id="skills"></div>
+    <div class="container-fluid min-vh-100 text-light bg-dark p-0">
+      <h2 class="text-center pt-3">Skills</h2>
+      <div class="row justify-content-around">
+        <!-- Node.js -->
+        <div class="card d-flex">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            class="card-img-top img-fluid h-50"
+            alt="Node.js"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Node.js</h5>
+            <p class="card-text">
+              Node.js es un entorno de tiempo de ejecución de JavaScript
+              construido sobre el motor V8 de Google Chrome. Se utiliza
+              principalmente para crear aplicaciones web del lado del servidor,
+              pero también se puede utilizar para crear aplicaciones de
+              escritorio y herramientas de línea de comandos.
+            </p>
+            <a
+              href="https://nodejs.org/es/"
+              class="btn btn-primary"
+              target="_blank"
+              >Leer más</a
+            >
+          </div>
+        </div>
+        <!-- HTML -->
+        <div class="card h-50 d-flex">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="card-img-top"
+            alt="HTML"
+          />
+          <div class="card-body">
+            <h5 class="card-title">HTML</h5>
+            <p class="card-text">
+              HTML es el lenguaje de marcado estándar utilizado para crear
+              páginas web. Se utiliza para definir la estructura y el contenido
+              de las páginas web utilizando etiquetas y atributos.
+            </p>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/HTML"
+              class="btn btn-primary"
+              target="_blank"
+              >Leer más</a
+            >
+          </div>
+        </div>
+        <!-- CSS -->
+        <div class="card h-50 d-flex">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="card-img-top"
+            alt="CSS"
+          />
+          <div class="card-body">
+            <h5 class="card-title">CSS</h5>
+            <p class="card-text">
+              CSS es un lenguaje de hojas de estilo utilizado para definir la
+              presentación y el estilo de las páginas web. Se utiliza junto con
+              HTML para dar estilo a la estructura y el contenido de las páginas
+              web.
+            </p>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/CSS"
+              class="btn btn-primary"
+              target="_blank"
+              >Leer más</a
+            >
+          </div>
+        </div>
+        <!-- JavaScript -->
+        <div class="card h-50 d-flex">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            class="card-img-top"
+            alt="JavaScript"
+          />
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">
+              JavaScript es un lenguaje de programación utilizado para crear
+              interactividad y dinamismo en las páginas web. Se utiliza
+              principalmente en el lado del cliente para agregar funcionalidad y
+              mejorar la experiencia del usuario.
+            </p>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+              class="btn btn-primary"
+              target="_blank"
+              >Leer más</a
+            >
+          </div>
+        </div>
+        <!-- Express -->
+        <div class="card h-50 d-flex">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+            class="card-img-top"
+            alt="Express"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Express</h5>
+            <p class="card-text">
+              Express es un framework de Node.js utilizado para crear
+              aplicaciones web del lado del servidor. Se utiliza para
+              simplificar el proceso de creación de aplicaciones web y para
+              agregar funcionalidades adicionales a Node.js.
+            </p>
+            <a
+              href="https://expressjs.com/es/"
+              class="btn btn-primary"
+              target="_blank"
+              >Leer más</a
+            >
+          </div>
+        </div>
+        <!-- jQuery -->
+        <div class="card h-50 d-flex">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+            class="card-img-top"
+            alt="jQuery"
+          />
+          <div class="card-body">
+            <h5 class="card-title">jQuery</h5>
+            <p class="card-text">
+              jQuery es una biblioteca de JavaScript utilizada para simplificar
+              la manipulación de documentos HTML, el manejo de eventos y el
+              desarrollo de animaciones. Se utiliza principalmente en el lado
+              del cliente para agregar funcionalidad adicional a las páginas
+              web.
+            </p>
+            <a
+              href="https://jquery.com/"
+              class="btn btn-primary"
+              target="_blank"
+              >Leer más</a
+            >
+          </div>
+        </div>
+        <!-- Bootstrap -->
+        <div class="card h-50 d-flex">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+            class="card-img-top"
+            alt="Bootstrap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Bootstrap</h5>
+            <p class="card-text">
+              Bootstrap es un framework de CSS utilizado para diseñar y
+              desarrollar páginas web con un diseño responsive y adaptable a
+              diferentes tamaños de pantalla. Ofrece una gran cantidad de
+              componentes, clases y herramientas para facilitar el desarrollo
+              web.
+            </p>
+            <a
+              href="https://getbootstrap.com/"
+              class="btn btn-primary"
+              target="_blank"
+              >Leer más</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light p-4" id="modules"></div>
+    <div id="modules" class="container-fluid min-vh-100 text-dark bg-light p-0">
+      <h2 class="text-center pt-3">Modulos</h2>
+      <section
+        class="d-flex justify-content-around pt-5 align-items-center h-100"
+      >
+        <div class="card col-5 text-center">
+          <img
+            class="card-img-top w-50"
+            src="https://sergiosanz.dev/static/b0ad08bfda05fba464bf2927db87772d/6df68/html-css.png"
+            alt="Title"
+          />
+          <div class="card-body">
+            <h4 class="card-title">M06</h4>
+            <a target="_blank" href="./moduleM06.html" class="btn btn-primary"
+              >Ir M06</a
+            >
+          </div>
+        </div>
+
+        <div class="card col-5 text-center">
+          <img
+            class="card-img-top w-50"
+            src="https://www.adictosaltrabajo.com/wp-content/uploads/2018/05/el_remozado_javascript.imagen.jpg"
+            alt="Title"
+          />
+          <div class="card-body">
+            <h4 class="card-title">M09</h4>
+            <a target="_blank" href="./moduleM09.html" class="btn btn-primary"
+              >Ir M09</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="bg-dark text-light text-center h-auto p-0">
+      <p class="p-3 m-0">Copyright © 2023</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

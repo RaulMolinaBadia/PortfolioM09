@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background-image: url(https://wallpaperaccess.com/full/103114.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  background-color: #1d4389c9;
+  width: 100%;
+  height: 20vh;
+}
+header h1 {
+  font-size: 100px;
+}
+header img {
+  width: 150px;
+  height: 100px;
+}
+#main {
+  width: 100%;
+  height: 70vh;
+}
+#main img {
+  width: 230px;
+  height: 230px;
+}
+.menu {
+  top: -21vh;
+  left: 90.65%;
+  position: absolute;
+  width: 41vh;
+  height: 41vh;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.menu li {
+  position: absolute;
+  background-color: #1d4289;
+  height: 20vh;
+  width: 20vh;
+  transform-origin: bottom right;
+  border: 1px solid #c8102f;
+  list-style: none;
+}
+.menu li a {
+  text-decoration: none;
+  position: absolute;
+  top: 99px;
+  left: 43px;
+  transform: rotate(154deg) skew(74deg);
+  text-align: center;
+  color: black;
+  font-size: 12px;
+}
+/* .menu li:nth-child(1) {
+  transform: rotate(180deg) skew(45deg);
+}
+.menu li:nth-child(2) {
+  transform: rotate(225deg) skew(45deg);
+}
+.menu li:nth-child(3) {
+  transform: rotate(270deg) skew(45deg);
+}
+.menu li:nth-child(4) {
+  transform: rotate(315deg) skew(45deg);
+} */
+.menu li:nth-child(1) {
+  transform: rotate(-90deg) skew(67.5deg);
+}
+.menu li:nth-child(2) {
+  transform: rotate(-67.5deg) skew(67.5deg);
+}
+.menu li:nth-child(3) {
+  transform: rotate(-45deg) skew(67.5deg);
+}
+.menu li:nth-child(4) {
+  transform: rotate(-22.5deg) skew(67.5deg);
+}
+.menu li:hover {
+  background-color: skyblue;
+}

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.menu {
+  top: 71vh;
+  left: 35vw;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.menu li {
+  position: absolute;
+  background-color: grey;
+  height: 200px;
+  width: 200px;
+  transform-origin: bottom right;
+  border: 1px solid black;
+  list-style: none;
+}
+.menu li a {
+  position: absolute;
+  top: 115px;
+  left: 100px;
+  transform: rotate(-33deg) skew(-14deg);
+  text-align: center;
+}
+.menu li:nth-child(1) {
+  transform: rotate(0deg) skew(45deg);
+}
+.menu li:nth-child(2) {
+  transform: rotate(45deg) skew(45deg);
+}
+.menu li:nth-child(3) {
+  transform: rotate(90deg) skew(45deg);
+}
+.menu li:nth-child(4) {
+  transform: rotate(135deg) skew(45deg);
+}
