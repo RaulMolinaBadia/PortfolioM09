@@ -19,7 +19,7 @@ nav{
   padding-left: 50px;
   height: 10vh;
 }
-nav a{
+.menu a{
 text-decoration: none;
 color: black;
 padding: 20px;
@@ -28,7 +28,7 @@ list-style: none;
 text-align: center;
 transition: all 0.5s;
 }
-nav a:hover{
+.menu a:hover{
   background-color: slateblue;
   color: skyblue;
 }

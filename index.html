@@ -11,7 +11,6 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
     <style>
       .bg-light {
         background-color: beige !important;
@@ -23,7 +22,7 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-collapse navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-white"
+      class="navbar navbar-collapse navbar-expand-md navbar-dark bg-dark sticky-top border-bottom border-white"
     >
       <button
         class="navbar-toggler"
@@ -37,6 +36,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand ms-3" href="index.html">RAUL</a>
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#inicio">Inicio</a>
@@ -55,7 +55,7 @@
     </nav>
 
     <div class="bg-dark p-4" id="inicio"></div>
-    <div class="container-fluid text-light text-center bg-dark p-0 min-vh-100">
+    <div class="container-fluid text-light text-center bg-dark min-vh-100">
       <h1 class="display-4">Bienvenidos a mi Portfolio</h1>
       <p class="lead">
         Soy un desarrollador web con experiencia en tecnologías como HTML, CSS,
@@ -68,9 +68,9 @@
     </div>
 
     <div class="bg-light p-4" id="aboutMe"></div>
-    <div id="aboutMe" class="container-fluid min-vh-100 text-dark bg-light p-0">
+    <div id="aboutMe" class="container-fluid min-vh-100 text-dark bg-light">
       <h2 class="text-center pb-3">Acerca de mí</h2>
-      <div class="container-fluid p-0 w-100 row">
+      <div class="container-fluid w-100 row">
         <div class="col-lg-6 p-4">
           <p class="lead">Hola, me llamo Raul Molina Aguilar.</p>
           <p class="lead">
@@ -93,11 +93,11 @@
     </div>
 
     <div class="bg-dark p-4" id="skills"></div>
-    <div class="container-fluid min-vh-100 text-light bg-dark p-0">
+    <div class="container-fluid min-vh-100 text-light bg-dark">
       <h2 class="text-center pt-3">Skills</h2>
       <div class="row justify-content-around m-0">
         <!-- Node.js -->
-        <div class="card col-lg-3 mx-2 mb-5 text-dark">
+        <div class="card col-lg-3 col-md-5 mx-2 mb-5 text-dark">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
             class="card-img-top img-fluid h-25"
@@ -121,7 +121,7 @@
           </div>
         </div>
         <!-- HTML -->
-        <div class="card col-lg-3 mx-2 mb-5 text-dark">
+        <div class="card col-lg-3 col-md-5 mx-2 mb-5 text-dark">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
             class="card-img-top img-fluid h-25"
@@ -143,7 +143,7 @@
           </div>
         </div>
         <!-- CSS -->
-        <div class="card col-lg-3 mx-2 mb-5 text-dark">
+        <div class="card col-lg-3 col-md-5 mx-2 mb-5 text-dark">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
             class="card-img-top img-fluid h-25"
@@ -166,7 +166,7 @@
           </div>
         </div>
         <!-- JavaScript -->
-        <div class="card col-lg-3 mx-2 mb-5 text-dark">
+        <div class="card col-lg-3 col-md-5 mx-2 mb-5 text-dark">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
             class="card-img-top img-fluid h-25"
@@ -189,7 +189,7 @@
           </div>
         </div>
         <!-- Express -->
-        <div class="card col-lg-3 mx-2 mb-5 text-dark">
+        <div class="card col-lg-3 col-md-5 mx-2 mb-5 text-dark">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
             class="card-img-top img-fluid h-25"
@@ -212,7 +212,7 @@
           </div>
         </div>
         <!-- jQuery -->
-        <div class="card col-lg-3 mx-2 mb-5 text-dark">
+        <div class="card col-lg-3 col-md-5 mx-2 mb-5 text-dark">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
             class="card-img-top img-fluid h-25"
@@ -236,7 +236,7 @@
           </div>
         </div>
         <!-- Bootstrap -->
-        <div class="card col-lg-3 mx-2 mb-5 text-dark">
+        <div class="card col-lg-3 col-md-5 mx-2 mb-5 text-dark">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
             class="card-img-top img-fluid h-25"
@@ -263,33 +263,39 @@
     </div>
 
     <div class="bg-light p-4" id="modules"></div>
-    <div id="modules" class="container-fluid min-vh-100 text-dark bg-light p-0">
+    <div id="modules" class="container-fluid min-vh-100 text-dark bg-light">
       <h2 class="text-center pt-3">Modulos</h2>
       <section
         class="d-flex justify-content-around pt-5 align-items-center h-100"
       >
-        <div class="card col-5 text-center">
+        <div
+          class="card col-5 align-items-center bg-dark text-light text-center"
+        >
           <img
-            class="card-img-top img-fluid w-50"
+            class="card-img-top img-fluid w-50 d-none d-md-block"
             src="https://sergiosanz.dev/static/b0ad08bfda05fba464bf2927db87772d/6df68/html-css.png"
             alt="Title"
           />
           <div class="card-body">
             <h4 class="card-title">M06</h4>
+            <p class="card-text">Desenvolupament web en entorn client</p>
             <a target="_blank" href="./moduleM06.html" class="btn btn-primary"
               >Ir M06</a
             >
           </div>
         </div>
 
-        <div class="card col-5 text-center">
+        <div
+          class="card col-5 align-items-center bg-dark text-light text-center"
+        >
           <img
-            class="card-img-top img-fluid w-50"
+            class="card-img-top img-fluid w-50 d-none d-md-block"
             src="https://www.adictosaltrabajo.com/wp-content/uploads/2018/05/el_remozado_javascript.imagen.jpg"
             alt="Title"
           />
           <div class="card-body">
             <h4 class="card-title">M09</h4>
+            <p class="card-text">Disseny d’interfícies web</p>
             <a target="_blank" href="./moduleM09.html" class="btn btn-primary"
               >Ir M09</a
             >
@@ -297,8 +303,8 @@
         </div>
       </section>
     </div>
-    <footer class="bg-dark text-light text-center h-auto p-0">
-      <p class="p-3 m-0">Copyright © 2023</p>
+    <footer class="bg-dark text-light text-center h-auto">
+      <p class="p-3 m-0">Copyright Raul Molina Aguilar © 2023</p>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
